@@ -1,0 +1,124 @@
+/*!
+ * Header content
+ */
+.header {
+
+  @media (pointer: coarse) and (hover: none) {
+      //background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  & a {
+    color: $white;
+    transition: .3s;
+
+    &:hover {
+      text-decoration: none;
+      color: $purple;
+      transition: .3s;
+    }
+  }
+
+  position: relative;
+  height: 105vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  background: #b2b2b2;
+
+  &-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+
+    & ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+
+      & li {
+        display: inline-block;
+
+        & a {
+          display: flex;
+          padding: 0 5px;
+          height: 31px;
+          align-items: center;
+          transition: .3s;
+
+          &:hover span img {
+            margin-left: -31px;
+            transition: .3s;
+          }
+
+          & span {
+            width: 31px;
+            height: 31px;
+            display: block;
+            overflow: hidden;
+            transition: .3s;
+
+            & img {
+              transition: .3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & #head   {
+
+    & .logo {
+      width: max-content;
+      max-width: 90%;
+      padding: 20px;
+    }
+  }
+
+  & video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    @media (pointer: coarse) and (hover: none) {
+        display: none;
+    }
+    @media screen and (max-width: 539px) {
+      display: none;
+    }
+  }
+
+  & .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  & .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $black;
+    opacity: 0.2;
+    z-index: 1;
+  }
+
+  & .lead {
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+
+}
+
