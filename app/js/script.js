@@ -1,4 +1,6 @@
 //Scripts
+document.getElementById("year").innerHTML = new Date().getFullYear();
+
 //Smooth scrolling of the page when you click on the menu
 $(function () {
     $(".smooth-scroll").on("click", function (event) {

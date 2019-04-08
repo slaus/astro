@@ -70,6 +70,26 @@
 
   & #head   {
 
+    @media screen and (max-width: 1199px) {
+      font-size: 60px;
+
+      & img {
+        width: 300px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      font-size: 48px;
+
+      & img {
+        width: 200px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 38px;
+    }
+
     & .logo {
       width: max-content;
       max-width: 90%;

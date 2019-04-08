@@ -4,4 +4,26 @@
 
 .footer {
   background: #252527;
+
+  & a {
+    color: $white;
+    transition: .3s;
+
+    &:hover {
+      color: $purple;
+      transition: .3s;
+      text-decoration: none;
+    }
+  }
+
+  & .copyright {
+    border-top: 2px solid $purple;
+  }
+
+  & ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+    text-transform: uppercase;
+  }
 }
